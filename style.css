@@ -145,27 +145,21 @@ header {
     transform: scale(1.1);
 }
 
+.profile-photo {
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the desired height */
+    border-radius: 50%; /* Makes the image circular */
+    border: 4px solid white; /* Adds a white border */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block;
+    margin: 20px auto; /* Centers the image horizontally */
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    .about-section, .projects, .contact {
-        max-width: 90%;
-        padding: 15px;
-    }
-
-    .about-section p {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    .icon-link {
-        width: 45px;
-        height: 45px;
-        font-size: 20px;
-    }
-
-    .about-section img {
-        width: 120px; /* Adjusted for mobile */
+    .profile-photo {
+        width: 120px;
         height: 120px;
     }
-    
 }
