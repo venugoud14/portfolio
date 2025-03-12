@@ -3,58 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Nagaram Venu Goud | Portfolio</title>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 
-    <header>
-        My Portfolio
+    <!-- Header Section -->
+    <header class="text-center py-6 bg-gray-900 text-white">
+        <h1 class="text-3xl font-bold">Nagaram Venu Goud</h1>
+        <p class="text-lg mt-2">Backend Developer | Java | Spring Boot | MongoDB</p>
     </header>
 
-    <section>
+    <!-- About Section -->
+    <section class="about text-center">
+        <img src="images/profile.jpg" alt="Profile Photo" class="about-section">
         <h2>About Me</h2>
-        <p>Hi, I'm an IT professional specializing in web development and software engineering. I love building modern and efficient applications.</p>
+        <p>
+            I am a backend developer with 2.5 years of experience specializing in Java, Spring Boot, MongoDB, and PostgreSQL.
+            Passionate about building scalable and efficient systems, I focus on optimizing backend architecture.
+        </p>
     </section>
 
-    <section>
+    <!-- Projects Section -->
+    <section class="projects text-center">
         <h2>Projects</h2>
-        <div>
-            <p><strong>Project 1:</strong> Portfolio Website</p>
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
             <p>Built with HTML, CSS, and JavaScript.</p>
-            <button onclick="window.open('https://github.com/yourgithub', '_blank')">View on GitHub</button>
+            <a href="https://github.com/yourgithub" target="_blank" class="btn">View on GitHub</a>
         </div>
-        <br>
-        <div>
-            <p><strong>Project 2:</strong> E-commerce Website</p>
+        <div class="project-card">
+            <h3>E-commerce Website</h3>
             <p>Built using React.js and Firebase.</p>
-            <button onclick="window.open('https://github.com/yourgithub', '_blank')">View on GitHub</button>
+            <a href="https://github.com/yourgithub" target="_blank" class="btn">View on GitHub</a>
         </div>
     </section>
 
-    <section id="contact" class="text-center py-10 bg-gray-100">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">Contact Me</h2>
-        
-        <div class="flex justify-center space-x-6 mb-6">
-            <a href="https://github.com/yourgithub" target="_blank" class="text-gray-600 hover:text-gray-900 text-2xl">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" class="text-gray-600 hover:text-gray-900 text-2xl">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:your.email@example.com" class="text-gray-600 hover:text-gray-900 text-2xl">
-                <i class="fas fa-envelope"></i>
-            </a>
+    <!-- Contact Section -->
+    <section class="contact text-center">
+        <h2>Contact Me</h2>
+        <div class="contact-icons">
+            <a href="tel:+919490995181"><i class="fas fa-phone"></i></a>
+            <a href="mailto:nvgoud2001@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/venu-goud-613730184/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
-    
-        <button class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition shadow-lg">
-            Contact Me
-        </button>
     </section>
-    
 
 </body>
 </html>
